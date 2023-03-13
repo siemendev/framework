@@ -1,0 +1,26 @@
+{
+    "name": "siemendev/framework-console",
+    "version": "0.1.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Framework\\Console\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ],
+    "require": {
+        "siemendev/framework": "^0.1",
+        "symfony/console": "^6.2"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../framework"
+        }
+    ]
+}

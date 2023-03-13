@@ -1,0 +1,22 @@
+{
+    "name": "siemendev/framework",
+    "version": "0.1.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "psr/container": "^2.0",
+        "symfony/finder": "^6.2",
+        "symfony/dotenv": "^6.2"
+    }
+}

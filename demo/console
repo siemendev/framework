@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+require_once 'vendor/autoload.php';
+
+(new Framework\Console\ConsoleFrontend(
+    new App\Application(__DIR__)
+))->run();

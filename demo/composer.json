@@ -1,0 +1,58 @@
+{
+    "name": "siemendev/framework-skeleton",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ],
+    "require": {
+        "ext-swoole": "*",
+        "siemendev/framework-environment": "^0.1",
+        "siemendev/framework-orchestrator": "^0.1",
+        "siemendev/framework-console": "^0.1",
+        "siemendev/framework-web": "^0.1",
+        "siemendev/framework-server-swoole": "^0.1",
+        "siemendev/framework-templating-twig": "^0.1"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../lib/framework"
+        },
+        {
+            "type": "path",
+            "url": "../lib/framework-environment"
+        },
+        {
+            "type": "path",
+            "url": "../lib/framework-web"
+        },
+        {
+            "type": "path",
+            "url": "../lib/framework-server-swoole"
+        },
+        {
+            "type": "path",
+            "url": "../lib/framework-console"
+        },
+        {
+            "type": "path",
+            "url": "../lib/framework-orchestrator"
+        },
+        {
+            "type": "path",
+            "url": "../lib/framework-templating"
+        },
+        {
+            "type": "path",
+            "url": "../lib/framework-templating-twig"
+        }
+    ]
+}

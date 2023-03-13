@@ -1,0 +1,27 @@
+{
+    "name": "siemendev/framework-web",
+    "version": "0.1.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Framework\\Web\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ],
+    "require": {
+        "siemendev/framework": "^0.1",
+        "symfony/routing": "^6.2",
+        "symfony/http-kernel": "^6.2"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../framework"
+        }
+    ]
+}

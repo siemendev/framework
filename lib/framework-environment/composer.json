@@ -1,0 +1,25 @@
+{
+    "name": "siemendev/framework-environment",
+    "version": "0.1.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Framework\\Environment\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ],
+    "require": {
+        "siemendev/framework": "^0.1"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../framework"
+        }
+    ]
+}

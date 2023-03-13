@@ -1,0 +1,29 @@
+{
+    "name": "siemendev/framework-templating",
+    "version": "0.1.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Framework\\Templating\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ],
+    "require": {
+        "siemendev/framework-web": "^0.1"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../framework"
+        },
+        {
+            "type": "path",
+            "url": "../framework-web"
+        }
+    ]
+}

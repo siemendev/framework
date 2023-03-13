@@ -1,0 +1,14 @@
+{
+    "name": "siemendev/framework-monorepo",
+    "type": "project",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "phpstan/phpstan": "^1.10"
+    },
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ]
+}

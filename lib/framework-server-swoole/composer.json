@@ -1,0 +1,33 @@
+{
+    "name": "siemendev/framework-server-swoole",
+    "version": "0.1.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Framework\\Server\\Swoole\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ],
+    "require": {
+        "ext-swoole": "*",
+        "siemendev/framework-web": "^0.1"
+    },
+    "require-dev": {
+        "swoole/ide-helper": "*"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../framework"
+        },
+        {
+            "type": "path",
+            "url": "../framework-web"
+        }
+    ]
+}

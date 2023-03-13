@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use App\Application;
+use Framework\Server\Swoole\SwooleHttpServer;
+use Framework\Templating\Renderer\TemplateRenderer;
+use Framework\Templating\Twig\TwigIntegration;
+use Framework\Web\WebFrontend;
+
+require_once 'vendor/autoload.php';
+
+(new WebFrontend(new Application(__DIR__), new SwooleHttpServer()))
+    ->addRenderer(
+        (new TemplateRenderer())
+            ->addIntegration(new TwigIntegration(__DIR__ . '/templates'))
+    )
+    ->run()
+;
