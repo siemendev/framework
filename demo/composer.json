@@ -24,35 +24,35 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../lib/framework"
+            "url": "../packages/framework"
         },
         {
             "type": "path",
-            "url": "../lib/framework-environment"
+            "url": "../packages/framework-environment"
         },
         {
             "type": "path",
-            "url": "../lib/framework-web"
+            "url": "../packages/framework-web"
         },
         {
             "type": "path",
-            "url": "../lib/framework-server-swoole"
+            "url": "../packages/framework-server-swoole"
         },
         {
             "type": "path",
-            "url": "../lib/framework-console"
+            "url": "../packages/framework-console"
         },
         {
             "type": "path",
-            "url": "../lib/framework-orchestrator"
+            "url": "../packages/framework-orchestrator"
         },
         {
             "type": "path",
-            "url": "../lib/framework-templating"
+            "url": "../packages/framework-templating"
         },
         {
             "type": "path",
-            "url": "../lib/framework-templating-twig"
+            "url": "../packages/framework-templating-twig"
         }
     ]
 }

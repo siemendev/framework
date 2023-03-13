@@ -164,7 +164,7 @@
             "version": "0.1.0",
             "dist": {
                 "type": "path",
-                "url": "../lib/framework",
+                "url": "../packages/framework",
                 "reference": "0234f81dcaa3acd101eb204b665c5c72e0ed1882"
             },
             "require": {
@@ -194,7 +194,7 @@
             "version": "0.1.0",
             "dist": {
                 "type": "path",
-                "url": "../lib/framework-console",
+                "url": "../packages/framework-console",
                 "reference": "50f469412bbe69cab8b3bc431b0e400258f350d0"
             },
             "require": {
@@ -222,7 +222,7 @@
             "version": "0.1.0",
             "dist": {
                 "type": "path",
-                "url": "../lib/framework-environment",
+                "url": "../packages/framework-environment",
                 "reference": "4163e3fdeaa758ab53c0fbb8b0329516db257222"
             },
             "require": {
@@ -249,7 +249,7 @@
             "version": "0.1.0",
             "dist": {
                 "type": "path",
-                "url": "../lib/framework-orchestrator",
+                "url": "../packages/framework-orchestrator",
                 "reference": "01505884ca3ecec24011b28d35516bfbcdc89237"
             },
             "require": {
@@ -276,7 +276,7 @@
             "version": "0.1.0",
             "dist": {
                 "type": "path",
-                "url": "../lib/framework-server-swoole",
+                "url": "../packages/framework-server-swoole",
                 "reference": "f38afd60f6fcd1b9ca490e9fbc313bd9f374f469"
             },
             "require": {
@@ -307,7 +307,7 @@
             "version": "0.1.0",
             "dist": {
                 "type": "path",
-                "url": "../lib/framework-templating",
+                "url": "../packages/framework-templating",
                 "reference": "53d25ef980ab38994c1774fd59f5a127f4ff7a3b"
             },
             "require": {
@@ -334,7 +334,7 @@
             "version": "0.1.0",
             "dist": {
                 "type": "path",
-                "url": "../lib/framework-templating-twig",
+                "url": "../packages/framework-templating-twig",
                 "reference": "9dab3699a60cdcd856aad381c277454951f833d0"
             },
             "require": {
@@ -363,7 +363,7 @@
             "version": "0.1.0",
             "dist": {
                 "type": "path",
-                "url": "../lib/framework-web",
+                "url": "../packages/framework-web",
                 "reference": "a0e252f3b7b466763c4d761b39397d28159219c1"
             },
             "require": {

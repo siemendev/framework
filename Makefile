@@ -8,15 +8,15 @@ vendor:
 _composer:
 	composer ${COMMAND}
 	cd demo && composer ${COMMAND}
-	@for PACKAGE in lib/*; do composer -d $$PACKAGE ${COMMAND}; done
+	@for PACKAGE in packages/*; do composer -d $$PACKAGE ${COMMAND}; done
 
 serve:
 	@PHP_IDE_CONFIG="serverName=localhost" php demo/public/index.php
 
 check: vendor fix test
 fix:
-	@php vendor/bin/phpcbf --standard=PSR12 --extensions=php lib/*/src demo/src
+	@php vendor/bin/phpcbf --standard=PSR12 --extensions=php packages/*/src demo/src
 test:
-	@php vendor/bin/phpcs --standard=PSR12 --extensions=php lib/*/src demo/src
-	@for PACKAGE in lib/*; do php vendor/bin/phpstan analyse --autoload-file $$PACKAGE/vendor/autoload.php $$PACKAGE/src; done
+	@php vendor/bin/phpcs --standard=PSR12 --extensions=php packages/*/src demo/src
+	@for PACKAGE in packages/*; do php vendor/bin/phpstan analyse --autoload-file $$PACKAGE/vendor/autoload.php $$PACKAGE/src; done
 	@php vendor/bin/phpstan analyse --autoload-file demo/vendor/autoload.php demo/src
