@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Factory;
+namespace App\Orchestrator;
 
 use Framework\Orchestrator\Annotation\AnnotatedOrchestrator;
 use Framework\Orchestrator\Annotation\Orchestrator;
