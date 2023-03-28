@@ -13,10 +13,16 @@ use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
 
 class SwooleHttpServer implements HttpServerInterface
 {
+    public function __construct(
+        private readonly string $host = '0.0.0.0',
+        private readonly int $port = 8000,
+    ) {
+    }
+
     /** @param callable(SymfonyRequest): SymfonyResponse $requestHandler */
     public function run(callable $requestHandler): void
     {
-        $http = new Server('0.0.0.0', 8000);
+        $http = new Server($this->host, $this->port);
         $http->set(['hook_flags' => SWOOLE_HOOK_ALL]);
         $http->on(
             'request',
