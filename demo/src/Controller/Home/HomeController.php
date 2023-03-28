@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller\Home;
 
-use App\Factory\MyOrchestrator;
+use App\Orchestrator\MyOrchestrator;
 use Framework\Templating\Controller\TemplateController;
 use Framework\Web\Request\RequestInterface;
 use Framework\Web\Request\ResponseInterface;
