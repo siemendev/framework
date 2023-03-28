@@ -33,7 +33,7 @@ final class SymfonyHttpBridge
             $request->cookie ?? [],
             $request->files ?? [],
             array_change_key_case($request->server ?? [], CASE_UPPER),
-            $request->rawContent()
+            $request->rawContent() /** @phpstan-ignore-line */
         );
         $sfRequest->headers = new HeaderBag($request->header ?? []);
 
