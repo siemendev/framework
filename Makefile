@@ -11,7 +11,7 @@ _composer:
 	@for PACKAGE in packages/*; do composer -d $$PACKAGE ${COMMAND}; done
 
 serve:
-	@PHP_IDE_CONFIG="serverName=localhost" php demo/public/index.php
+	@PHP_IDE_CONFIG="serverName=localhost" php demo/web
 
 check: vendor fix test
 fix:

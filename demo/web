@@ -9,7 +9,7 @@ use Framework\Templating\Renderer\TemplateRenderer;
 use Framework\Templating\Twig\TwigIntegration;
 use Framework\Web\WebFrontend;
 
-require_once 'vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
 (new WebFrontend(new Application(__DIR__), new SwooleHttpServer()))
     ->addRenderer(
