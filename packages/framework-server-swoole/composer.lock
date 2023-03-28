@@ -1190,16 +1190,16 @@
     "packages-dev": [
         {
             "name": "swoole/ide-helper",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole/ide-helper.git",
-                "reference": "f9cdf7bfb70ef3a8a2b8e9eb14ce3d09c02524fa"
+                "reference": "16cfee44a6ec92254228c39bcab2fb8ae74cc2ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swoole/ide-helper/zipball/f9cdf7bfb70ef3a8a2b8e9eb14ce3d09c02524fa",
-                "reference": "f9cdf7bfb70ef3a8a2b8e9eb14ce3d09c02524fa",
+                "url": "https://api.github.com/repos/swoole/ide-helper/zipball/16cfee44a6ec92254228c39bcab2fb8ae74cc2ea",
+                "reference": "16cfee44a6ec92254228c39bcab2fb8ae74cc2ea",
                 "shasum": ""
             },
             "type": "library",
@@ -1216,19 +1216,9 @@
             "description": "IDE help files for Swoole.",
             "support": {
                 "issues": "https://github.com/swoole/ide-helper/issues",
-                "source": "https://github.com/swoole/ide-helper/tree/5.0.1"
+                "source": "https://github.com/swoole/ide-helper/tree/5.0.2"
             },
-            "funding": [
-                {
-                    "url": "https://gitee.com/swoole/swoole?donate=true",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/swoole",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-11-08T07:13:40+00:00"
+            "time": "2023-03-20T06:05:55+00:00"
         }
     ],
     "aliases": [],
