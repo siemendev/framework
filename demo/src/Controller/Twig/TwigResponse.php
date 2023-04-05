@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Controller\Home;
+namespace App\Controller\Twig;
 
 use Framework\Templating\Response\TemplatingResponseInterface;
 use Framework\Web\Request\ResponseInterface;
 
-class HomeResponse implements ResponseInterface, TemplatingResponseInterface
+class TwigResponse implements ResponseInterface, TemplatingResponseInterface
 {
     public string $title;
 
@@ -15,6 +15,6 @@ class HomeResponse implements ResponseInterface, TemplatingResponseInterface
 
     public static function template(): string
     {
-        return 'home/index';
+        return 'twig/index';
     }
 }

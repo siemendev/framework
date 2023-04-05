@@ -1,0 +1,35 @@
+{
+    "name": "siemendev/framework-templating-blade",
+    "version": "0.1.0",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Framework\\Templating\\Blade\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Patrick Siemen",
+            "email": "post@patrick-siemen.de"
+        }
+    ],
+    "require": {
+        "siemendev/framework-templating": "^0.1",
+        "illuminate/view": "^10.5",
+        "symfony/finder": "^6.2"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../framework"
+        },
+        {
+            "type": "path",
+            "url": "../framework-web"
+        },
+        {
+            "type": "path",
+            "url": "../framework-templating"
+        }
+    ]
+}

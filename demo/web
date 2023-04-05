@@ -6,6 +6,7 @@ declare(strict_types=1);
 use App\Application;
 use Framework\Server\Swoole\SwooleHttpServer;
 use Framework\Templating\Renderer\TemplateRenderer;
+use Framework\Templating\Blade\BladeIntegration;
 use Framework\Templating\Twig\TwigIntegration;
 use Framework\Web\WebFrontend;
 
@@ -15,6 +16,7 @@ require_once __DIR__ . '/vendor/autoload.php';
     ->addRenderer(
         (new TemplateRenderer())
             ->addIntegration(new TwigIntegration(__DIR__ . '/templates'))
+            ->addIntegration(new BladeIntegration(__DIR__ . '/templates'))
     )
     ->run()
 ;

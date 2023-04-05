@@ -19,7 +19,8 @@
         "siemendev/framework-console": "^0.1",
         "siemendev/framework-web": "^0.1",
         "siemendev/framework-server-swoole": "^0.1",
-        "siemendev/framework-templating-twig": "^0.1"
+        "siemendev/framework-templating-twig": "^0.1",
+        "siemendev/framework-templating-blade": "^0.1"
     },
     "repositories": [
         {
@@ -53,6 +54,10 @@
         {
             "type": "path",
             "url": "../packages/framework-templating-twig"
+        },
+        {
+            "type": "path",
+            "url": "../packages/framework-templating-blade"
         }
     ]
 }
