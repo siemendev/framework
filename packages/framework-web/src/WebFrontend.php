@@ -9,6 +9,8 @@ use Framework\Web\Kernel\HttpKernel;
 use Framework\Web\Rendering\Renderer\RendererInterface;
 use Framework\Web\Server\HttpServerInterface;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Throwable;
 
 class WebFrontend
 {
@@ -32,7 +34,12 @@ class WebFrontend
     {
         $this->kernel->boot();
         $this->server->run(function (Request $request) {
-            return $this->kernel->handle($request);
+            try {
+                return $this->kernel->handle($request);
+            } catch (Throwable $e) {
+                // todo improve error handling (different status codes on different exceptions, nice error pages, etc.)
+                return new Response('<h1>Offline</h1>', 500);
+            }
         });
 
         return $this;
