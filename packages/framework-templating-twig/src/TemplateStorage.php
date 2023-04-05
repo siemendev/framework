@@ -22,10 +22,10 @@ class TemplateStorage implements LoaderInterface
         $this->templates[$name] = $template;
     }
 
-    /** @return array<string, string> */
+    /** @return array<int, string> */
     public function getTemplates(): array
     {
-        return $this->templates;
+        return array_keys($this->templates);
     }
 
     public function getSourceContext(string $name): Source

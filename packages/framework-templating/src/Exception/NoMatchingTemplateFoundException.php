@@ -15,8 +15,8 @@ class NoMatchingTemplateFoundException extends LogicException
     {
         $templates = [];
         foreach ($integrations as $integration) {
-            foreach ($integration->templates() as $templateIdentifier => $templatePath) {
-                $templates[] = sprintf('%s: %s', $templateIdentifier, $templatePath);
+            foreach ($integration->templates() as $templateIdentifier) {
+                $templates[] = $templateIdentifier;
             }
         }
 
