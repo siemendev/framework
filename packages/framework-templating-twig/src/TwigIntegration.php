@@ -34,7 +34,7 @@ class TwigIntegration implements IntegrationInterface
         }
     }
 
-    /** @return array<string, string> */
+    /** @return array<int, string> */
     public function templates(): array
     {
         return $this->templates->getTemplates();

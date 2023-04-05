@@ -12,7 +12,7 @@ interface IntegrationInterface
     public function boot(): void;
 
     /**
-     * @return array<string, string> the key is the identifier and the value the file path relative to the project root
+     * @return array<int, string> the key is the identifier and the value the file path relative to the project root
      */
     public function templates(): array;
 

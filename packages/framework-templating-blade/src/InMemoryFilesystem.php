@@ -42,7 +42,11 @@ class InMemoryFilesystem extends Filesystem
         return true;
     }
 
-    public function getRequire($path, array $data = [])
+    /**
+     * @param array<scalar, mixed> $data
+     * @throws FileNotFoundException
+     */
+    public function getRequire($path, array $data = []): mixed
     {
         if ($this->exists($path)) {
             $template = $this->get($path);
