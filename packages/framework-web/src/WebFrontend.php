@@ -38,7 +38,7 @@ class WebFrontend
                 return $this->kernel->handle($request);
             } catch (Throwable $e) {
                 // todo improve error handling (different status codes on different exceptions, nice error pages, etc.)
-                return new Response('<h1>Offline</h1>', 500);
+                return new Response('<h1>Something went wrong.</h1>', 500);
             }
         });
 
